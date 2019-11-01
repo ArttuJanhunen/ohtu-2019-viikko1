@@ -1,7 +1,8 @@
 /*.tmp
 **/build
 **/.gradle
-/.settings
-/bin
+**/.settings
+**/bin
 .classpath
 .project
+settings.gradle
