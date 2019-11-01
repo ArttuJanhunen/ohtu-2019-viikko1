@@ -115,7 +115,7 @@ public class VarastoTest {
     public void lisataanEnemmanKuinMahtuu() {
         varasto.lisaaVarastoon(200);
 
-        assertEquals(1, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(10, varasto.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
