@@ -40,6 +40,13 @@ public class VarastoTest {
     }
 
     @Test
+    public void luodessaSaldoLisataan() {
+        Varasto testiVarasto = new Varasto(10, 5);
+
+        assertEquals(5.0, testiVarasto.getSaldo(), vertailuTarkkuus);
+    }
+
+    @Test
     public void lisaysLisaaPienentaaVapaataTilaa() {
         varasto.lisaaVarastoon(8);
 
@@ -82,6 +89,18 @@ public class VarastoTest {
         Varasto negatiivinenVarasto = new Varasto(-0.1);
 
         assertEquals(0.0, negatiivinenVarasto.getTilavuus(), vertailuTarkkuus);
+    }
+
+    @Test
+    public void liianPieniTilavuusKorjataanNollaan2() {
+        Varasto virheellinen = new Varasto(0.0, 0.0);
+
+        assertEquals(0.0, virheellinen.getTilavuus(), vertailuTarkkuus);
+
+        Varasto negatiivinenVarasto = new Varasto(-0.1, 0.0);
+
+        assertEquals(0.0, negatiivinenVarasto.getTilavuus(), vertailuTarkkuus);
+
     }
 
     @Test
