@@ -36,7 +36,20 @@ public class Varasto {
         } else {
             oikeaSaldo = tilavuus; // täyteen ja ylimäärä hukkaan!
         }
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
+        System.out.println("jee");
         return oikeaSaldo;
+        
     }
 
     // --- ottavat aksessorit eli getterit: ---
